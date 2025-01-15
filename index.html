@@ -1,23 +1,464 @@
 <!DOCTYPE html>
-<html no_gl="true" lang="zh-CN" class="dcg-calculator-api-container-v1_11">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="Description" content="具备百分比、分数、指数函数、对数、三角函数、统计数据等先进运算功能。"/>
-        <link rel="icon" href="favicon.png" type="image/x-icon"/>
-        <title>科学计算器</title>
-    </head>
-    <!--  dcg-platform="www"是一种特殊的css格式如果改掉就没数据了 -->
-    <body>
-        <div dcg-platform="www">
-            <div class="dcg-loading-div-container">
-                <div class="dcg-loading-background-div"></div>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>河北高考志愿填报</title>
+    <meta name="description" content="河北高考志愿填报">
+    <meta name="keywords" content="河北高考志愿填报">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        #i5mf5s {
+            background-color: #000000;
+            background-image: url('img/bg6.jpg');
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+        }
+        .logo path {
+            pointer-events: none;
+            fill: none;
+            stroke-linecap: round;
+            stroke-width: 7;
+            stroke: rgb(255, 255, 255);
+        }
+        .wechat-group img {
+            max-width: 220px;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+            width: 100%;
+        }
+        .welcome-img img {
+            width: 100%;
+        }
+        #header:not(.sticky-header) #logo a {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .nav-link {
+            color: #fff500;
+        }
+        .form-floating.mb-4 {
+            height: 1296px;
+        }
+        .wrapper.bg-light.wrapper-border {
+            background-image: url('img/bg4.jpg');
+        }
+        .c23783 {
+            color: black;
+            width: 165px;
+            height: 200px;
+        }
+        .c23932 {
+            color: black;
+            width: 165px;
+            height: 200px;
+        }
+        .card-body.p-12 {
+            color: #000000;
+        }
+        .navbar.navbar-expand-lg.fancy.navbar-light.navbar-bg-light.transparent.navbar-clone.fixed {
+            background-image: url('img/bg5.jpg');
+        }
+        .c74052 {
+            padding: 10px;
+            text-align: center;
+            color: #ff0051;
+        }
+        .c95205 {
+            top: -2rem;
+            right: -1.9rem;
+        }
+        .c96641 {
+            font-size: 16px;
+        }
+    </style>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="河北高考志愿填报|高考志愿填报|高考|教育|大学|志愿"/>
+    <meta name="keywords" content="河北高考志愿填报,高考志愿填报,高考,教育,大学,志愿"/>
+    <meta name="author" content="Lapus"/>
+    <link rel="preload" href="fonts/Unicons.woff2" as="font" type="font/woff2" crossorigin=""/>
+    <link rel="preload" href="img/blob.svg" as="image" crossorigin=""/>
+    <link rel="shortcut icon" href="img/favicon.png"/>
+    <link rel="stylesheet" href="css/plugins.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/pink.css"/>
+</head>
+<body>
+    <nav id="sticky-navbar" class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light transparent navbar-clone fixed">
+        <div class="container">
+            <div class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
+                <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                    <div class="offcanvas-header d-lg-none">
+                        <h3 class="text-white fs-30 mb-0">河北高考志愿填报</h3>
+                        <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="btn-close btn-close-white"></button>
+                    </div>
+                    <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">业内资讯</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="http://www.hebeea.edu.cn/" class="dropdown-item">教育咨询</a><a href="https://www.neea.edu.cn/" class="dropdown-item">考试信息</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <div class="dropdown-menu dropdown-lg">
+                                    <div class="dropdown-lg-content">
+                                        <div>
+                                            <h6 class="dropdown-header">体验设计</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./projects.html" class="dropdown-item">某电商平台</a></li>
+                                                <li><a href="./projects2.html" class="dropdown-item">某电商平台</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- /.column -->
+                                        <div>
+                                            <h6 class="dropdown-header">交互设计</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./single-project.html" class="dropdown-item">某游戏平台</a></li>
+                                                <li><a href="./single-project2.html" class="dropdown-item">某游戏平台</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- /.column -->
+                                    </div>
+                                    <!-- /auto-column -->
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">联系我们</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="https://wx.zsxq.com/group/28888414518811" class="dropdown-item">知识星球</a></li>
+                                    <li class="nav-item"><a href="https://mp.weixin.qq.com/s/25w6HblF1BZkzUhwRN6Cdw" class="dropdown-item">微信公众号</a></li>
+                                    <li class="dropdown dropdown-submenu dropend"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- /.navbar-nav -->
+                        <div class="offcanvas-footer d-lg-none">
+                            <div>
+                                <a href="mailto:first.last@email.com" class="link-inverse">help@lapus.cn</a><br/> 00 (123) 456 78 90 <br/>
+                                <nav class="nav social social-white mt-4">
+                                    <a href="#"><i class="uil uil-twitter"></i></a>
+                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                    <a href="#"><i class="uil uil-dribbble"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>
+                                    <a href="#"><i class="uil uil-youtube"></i></a>
+                                </nav>
+                                <!-- /.social -->
+                            </div>
+                        </div>
+                        <!-- /.offcanvas-footer -->
+                    </div>
+                    <!-- /.offcanvas-body -->
+                </div>
+                <!-- /.navbar-collapse -->
+                <div class="navbar-other w-100 d-flex ms-auto">
+                    <div id="ixgz3j" class="c74052"><b>河北高考志愿填报</b></div>
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <li class="nav-item"><!-- /.social --></li>
+                        <li class="nav-item d-lg-none">
+                            <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                        </li>
+                    </ul>
+                    <!-- /.navbar-nav -->
+                </div>
+                <!-- /.navbar-other -->
             </div>
-            <div id="main-container"></div>
-            <style>
-            @import 'index.css';
-            </style>
-            <script src="index.js"></script>
+            <!-- /.navbar-collapse-wrapper -->
         </div>
-    </body>
+        <!-- /.container -->
+    </nav>
+    <div class="content-wrapper">
+        <header class="wrapper bg-gray">
+            <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light">
+                <div class="container">
+                    <!-- /.navbar-collapse-wrapper -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <!-- /.navbar -->
+        </header>
+        <!-- /header -->
+        <!-- /section -->
+        <section class="wrapper bg-light wrapper-border">
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+        <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light transparent navbar-clone fixed">
+            <div class="container">
+                <div class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
+                    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                        <div class="offcanvas-header d-lg-none">
+                            <h3 class="text-white fs-30 mb-0">河北高考志愿填报</h3>
+                            <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="btn-close btn-close-white"></button>
+                        </div>
+                        <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"></li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">业内资讯</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="http://www.hebeea.edu.cn/" class="dropdown-item">教育咨询</a>
+                                            <a href="https://www.neea.edu.cn/" class="dropdown-item">考试信息</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">联系我们</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="https://wx.zsxq.com/group/28888414518811" class="dropdown-item">知识星球</a></li>
+                                        <li class="nav-item"><a href="https://mp.weixin.qq.com/s/25w6HblF1BZkzUhwRN6Cdw" class="dropdown-item">微信公众号</a></li>
+                                        <li class="dropdown dropdown-submenu dropend"></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+
+                                <a href="#"  href="https://wx.zsxq.com/group/28888414518811" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">联系我们</a>
+                            
+                                
+
+                            
+                            
+                            
+                            </li>
+                            </ul>
+                        </div>
+                        <!-- /.offcanvas-body -->
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <div class="navbar-other w-100 d-flex ms-auto">
+                        <div class="c74052"><b>河北高考志愿填报</b></div>
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <li class="nav-item"><!-- /.social --></li>
+                            <li class="nav-item d-lg-none">
+                                <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                            </li>
+                        </ul>
+                        <!-- /.navbar-nav -->
+                    </div>
+                    <!-- /.navbar-other -->
+                </div>
+                <!-- /.navbar-collapse-wrapper -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <section class="wrapper bg-light wrapper-border">
+            <!-- /.container -->
+        </section>
+        <section class="wrapper bg-light wrapper-border">
+            <div class="container py-14 pt-md-18 pb-md-16">
+                <!--/.row -->
+                <div class="card bg-soft-violet mb-10">
+                    <div class="card-body p-12 pb-0">
+                        <div class="row">
+                            <div class="col-lg-4 pb-12 align-self-center">
+                                <h3 class="h1 post-title mb-3">使用说明</h3>
+                                <p>在高考成绩出来后参考本省一分一档表统计您孩子在本省的高考排名，使用孩子在本省的排名情况填写本网站的志愿填报模块，当前免费用户只展示20个志愿，完整志愿清单添加微信获取。</p>
+                            </div>
+                            <!-- /column -->
+                            <div class="col-lg-7 offset-lg-1 align-self-end">
+                                <figure>
+                                    <img src="img/f1.png" alt="" class="img-fluid"/>
+                                </figure>
+                            </div>
+                            <!-- /column -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!--/.card-body -->
+                </div>
+                <!--/.card -->
+                <div class="card bg-soft-blue mb-10">
+                    <div class="card-body p-12">
+                        <link rel="stylesheet" href="css/plugins.css"/>
+                        <link rel="stylesheet" href="css/style.css"/>
+                        <section class="wrapper">
+                            <div class="container py-14 py-md-16">
+                                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                                    <div class="col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative">
+                                        <div data-rellax-speed="1" id="ijilm8" class="shape bg-soft-primary rounded-circle rellax w-20 h-20 c95205"></div>
+
+
+
+
+
+
+
+
+                                        
+                                    </div>
+                                    <!--/column-->
+                                    <div class="col-lg-6">
+                                        <h2 class="mb-3">
+                                            <h3 id="i4b4jg-2" draggable="false" class="h1 post-title mb-3 gjs-selected">高考志愿填报</h3>
+                                        </h2>
+                                        <p class="lead fs-lg">
+                                            <span id="itsvkc" class="c96641">助力您的孩子考上更好的大学</span>
+                                        </p>
+                                        <div class="row gx-xl-10 gy-6">
+                                            <div class="col-md-6">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <img src="img/target.svg" alt="" class="icon-svg icon-svg-sm me-4"/>
+                                                    </div>
+                                                    <div>
+                                                        <h4 class="mb-1">产品目标</h4>
+                                                        <p class="mb-0">达则兼济天下</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/column -->
+                                            <div class="col-md-6">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <img src="img/award-2.svg" alt="" class="icon-svg icon-svg-sm me-4"/>
+                                                    </div>
+                                                    <div>
+                                                        <h4 class="mb-1">产品价值</h4>
+                                                        <p class="mb-0">穷则独善其身</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/column -->
+                                        </div>
+                                        <!--/.row -->
+                                    </div>
+                                    <!--/column -->
+                                </div>
+                                <!--/.row -->
+                            </div>
+                            <!-- /.container -->
+                        </section>
+                        <!-- /section -->
+                        <script src="js/plugins.js"></script>
+                        <script src="js/theme.js"></script>
+                        <!-- /.row -->
+                    </div>
+                    <!--/.card-body -->
+                </div>
+                <!--/.card -->
+                <div class="row gx-md-8 gx-xl-10">
+                    <div class="col-lg-6">
+                        <div class="card bg-soft-leaf mb-10">
+                            <div class="card-body p-12 pb-0">
+                                <h3 class="h1 post-title mb-3">专业说明</h3>
+                                <p>对高考对应的专业进行解读</p>
+                            </div>
+                            <!--/.card-body -->
+                            <img src="img/f3.png" alt="" class="card-img-bottom"/>
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!-- /column -->
+                    <div class="col-lg-6">
+                        <div class="card bg-soft-pink">
+                            <div class="card-body p-12 pb-0">
+                                <h3 class="h1 post-title mb-3">职业说明</h3>
+                                <p>对学生未来涉及的职业进行解读</p>
+                            </div>
+                            <!--/.card-body -->
+                            <img src="img/f4.png" alt="" class="card-img-bottom"/>
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer id="i5mf5s">
+        <div class="container pt-14 pt-md-18 pb-7">
+            <div class="card bg-soft-primary mb-8">
+                <div class="card-body p-12">
+                    <div class="row gx-md-8 gx-xl-12 gy-10">
+                        <div class="col-lg-6">
+                            <img src="img/email.svg" alt="" class="svg-inject icon-svg icon-svg-sm mb-4"/>
+                            <h2 class="display-4 mb-3 pe-lg-10">使用过程中遇到问题或者需求更加专业的服务请与我们联系</h2>
+                            <p class="lead pe-lg-12 mb-0">欢迎给我们留言，感谢大家长期以来的支持和帮助！</p>
+                        </div>
+                        <!-- /column -->
+                        <div class="col-lg-6">
+                            <form method="post" action="./assets/php/contact.php" novalidate="" class="contact-form needs-validation">
+                                <div class="messages"></div>
+                                <div class="row gx-4">
+                                    <div class="col-md-6"></div>
+                                    <!-- /column -->
+                                    <div class="col-md-6"></div>
+                                    <!-- /column -->
+                                    <div class="col-12"></div>
+                                    <!-- /column -->
+                                    <!-- /column -->
+                                </div>
+                                <!-- /.row -->
+                            </form>
+                            <img src="img/weixinp2.jpg" class="c23783"/>
+                            <img src="img/weixinp1.jpg" class="c23932"/>
+                            <!-- /form -->
+                        </div>
+                        <div class="col-lg-6">
+                            <form method="post" action="./assets/php/contact.php" novalidate="" class="contact-form needs-validation">
+                                <div class="messages"></div>
+                                <div class="row gx-4">
+                                    <div class="col-md-6"></div>
+                                    <!-- /column -->
+                                    <div class="col-md-6"></div>
+                                    <!-- /column -->
+                                    <div class="col-12"></div>
+                                    <!-- /column -->
+                                    <!-- /column -->
+                                </div>
+                                <!-- /.row -->
+                            </form>
+                            <!-- /form -->
+                        </div>
+                        <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!--/.card-body -->
+            </div>
+            <!--/.card -->
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-2 mb-lg-0">© china Lapus. All rights reserved.</p>
+                <nav class="nav social social-muted mb-0 text-md-end">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </nav>
+                <!-- /.social -->
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <script src="js/plugins.js"></script>
+    <script src="js/theme.js"></script>
+</div>
+</body>
 </html>
