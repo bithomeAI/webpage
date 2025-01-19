@@ -11,84 +11,73 @@
         }
         body {
             margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
         }
         #i5mf5s {
             background-color: #000000;
             background-image: url('img/bg6.jpg');
         }
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
-        }
-        .logo path {
+       .logo path {
             pointer-events: none;
             fill: none;
             stroke-linecap: round;
             stroke-width: 7;
             stroke: rgb(255, 255, 255);
         }
-        .wechat-group img {
+       .wechat-group img {
             max-width: 220px;
             height: auto;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-            border-bottom-right-radius: 8px;
-            border-bottom-left-radius: 8px;
-            margin-top: 0px;
-            margin-right: auto;
-            margin-bottom: 0px;
-            margin-left: auto;
-            width: 100%;
+            border-radius: 8px;
+            margin: 0 auto;
         }
-        .welcome-img img {
+       .welcome-img img {
             width: 100%;
         }
         #header:not(.sticky-header) #logo a {
             opacity: 0;
             pointer-events: none;
         }
-        .nav-link {
+       .nav-link {
             color: #fff500;
         }
-        .form-floating.mb-4 {
+       .form-floating.mb-4 {
             height: 1296px;
         }
-        .wrapper.bg-light.wrapper-border {
+       .wrapper.bg-light.wrapper-border {
             background-image: url('img/bg4.jpg');
         }
-        .c23783 {
+       .c23783,.c23932 {
             color: black;
             width: 165px;
             height: 200px;
         }
-        .c23932 {
-            color: black;
-            width: 165px;
-            height: 200px;
-        }
-        .card-body.p-12 {
+       .card-body.p-12 {
             color: #000000;
         }
-        .navbar.navbar-expand-lg.fancy.navbar-light.navbar-bg-light.transparent.navbar-clone.fixed {
+       .navbar.navbar-expand-lg.fancy.navbar-light.navbar-bg-light.transparent.navbar-clone.fixed {
             background-image: url('img/bg5.jpg');
         }
-        .c74052 {
-            padding: 10px;
+       .c74052 {
+            padding: 1rem;
             text-align: center;
             color: #ff0051;
         }
-        .c95205 {
+       .c95205 {
             top: -2rem;
             right: -1.9rem;
         }
-        .c96641 {
-            font-size: 16px;
+       .c96641 {
+            font-size: 1rem;
+        }
+        /* 媒体查询用于适配不同屏幕尺寸 */
+        @media (max-width: 768px) {
+           .form-floating.mb-4 {
+                height: auto;
+            }
+           .c23783,.c23932 {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
     <meta charset="utf-8"/>
@@ -256,9 +245,6 @@
             <!-- /.container -->
         </nav>
         <section class="wrapper bg-light wrapper-border">
-            <!-- /.container -->
-        </section>
-        <section class="wrapper bg-light wrapper-border">
             <div class="container py-14 pt-md-18 pb-md-16">
                 <!--/.row -->
                 <div class="card bg-soft-violet mb-10">
@@ -275,7 +261,7 @@
                                 </figure>
                             </div>
                             <!-- /column -->
-                            <iframe src=".\computer.html" width="800" height="600" frameborder="0"></iframe>
+                            <iframe src=".\computer.html" style="width: 100%; height: 50vh; border: 0;"></iframe>
                         </div>
                         <!-- /.row -->
                     </div>
@@ -319,7 +305,6 @@
                                                 </div>
                                             </div>
                                             <!--/column -->
-                                        <iframe src=".\gaokao.html" width="800" height="1000" frameborder="0"></iframe>
                                         </div>
                                         <!--/.row -->
                                     </div>
@@ -333,6 +318,7 @@
                         <script src="js/plugins.js"></script>
                         <script src="js/theme.js"></script>
                         <!-- /.row -->
+                    <iframe src=".\gaokao.html"  style="width: 100%; height: 50vh; border: 0;"></iframe>
                     </div>
                     <!--/.card-body -->
                 </div>
@@ -346,7 +332,7 @@
                             </div>
                             <!--/.card-body -->
                             <img src="img/f3.png" alt="" class="card-img-bottom"/>
-                            <iframe src=".\zhuanye.html" width="600" height="1000" frameborder="0"></iframe>
+                            <iframe src=".\zhuanye.html" style="width: 100%; height: 50vh; border: 0;"></iframe>
                         </div>
                         <!--/.card -->
                     </div>
@@ -359,7 +345,7 @@
                             </div>
                             <!--/.card-body -->
                             <img src="img/f4.png" alt="" class="card-img-bottom"/>
-                            <iframe src=".\zhuanye.html" width="600" height="1000" frameborder="0"></iframe>
+                            <iframe src=".\zhiye.html" style="width: 100%; height: 50vh; border: 0;"></iframe>
                         </div>
                         <!--/.card -->
                     </div>
@@ -380,7 +366,7 @@
                         <div class="col-lg-6">
                             <img src="img/email.svg" alt="" class="svg-inject icon-svg icon-svg-sm mb-4"/>
                             <h2 class="display-4 mb-3 pe-lg-10">使用过程中遇到问题或者需求更加专业的服务请与我们联系</h2>
-                            <p class="lead pe-lg-12 mb-0">欢迎给我们留言，感谢大家长期以来的支持和帮助！</p>
+                            <p class="lead pe-lg-12 mb-0">添加客服微信免费获取更全面的各个职业对应的薪酬清单和更专业的志愿填报服务</p>
                         </div>
                         <!-- /column -->
                         <div class="col-lg-6">
@@ -421,25 +407,26 @@
                     </div>
                     <!-- /.row -->
                 </div>
-                <!--/.card-body -->
+                <!--/.card-body-->
             </div>
-            <!--/.card -->
-            <div class="d-md-flex align-items-center justify-content-between">
-                <p class="mb-2 mb-lg-0">© china Lapus. All rights reserved.</p>
-                <nav class="nav social social-muted mb-0 text-md-end">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                </nav>
-                <!-- /.social -->
-            </div>
+        <iframe src=".\xinchouhot.html" style="width: 100%; height: 50vh; border: 0;"></iframe>
+        <iframe src=".\xinchou.html" style="width: 100%; height: 50vh; border: 0;"></iframe>
+        <!--/.card -->
+        <div class="d-md-flex align-items-center justify-content-between">
+            <p class="mb-2 mb-lg-0">© china Lapus. All rights reserved.</p>
+            <nav class="nav social social-muted mb-0 text-md-end">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </nav>
+            <!-- /.social -->
         </div>
-        <!-- /.container -->
-    </footer>
-    <script src="js/plugins.js"></script>
-    <script src="js/theme.js"></script>
-</div>
+    </div>
+    <!-- /.container -->
+</footer>
+<script src="js/plugins.js"></script>
+<script src="js/theme.js"></script>
 </body>
 </html>
